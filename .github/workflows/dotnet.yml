@@ -22,7 +22,6 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore
-    - name: Build
+    - name: Build && Deploy
       run: dotnet build --no-restore
-    - name: deploy
       run: dotnet run
