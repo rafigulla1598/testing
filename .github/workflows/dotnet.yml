@@ -23,5 +23,4 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build && Deploy
-      run: dotnet build --no-restore
-      run: dotnet run
+      run: dotnet build --no-restore && dotnet run
